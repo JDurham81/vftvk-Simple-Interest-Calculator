@@ -6,13 +6,14 @@
     </head>
     <body>
         <div class="maindiv">
-          <h1 id="caption">Simple Interest Calculator</h1>  
-          <label id="amount">Amount <input type="number"  id="principal"></label>  <br/>
-          <label id="RateL"> Rate<input onchange="updateRate()" type="range" id="rate" min="1" max="20" step=".25" value="default_value"></label> 
+          <h1>Simple Interest Calculator</h1>  
+          <div class="inputdiv">
+          Amount<input type="number"  id="principal">  <br/>
+          Rate<input onchange="updateRate()" type="range" id="rate" min="1" max="20" step=".25" value="5">
             <span id="rate_val">
               10.25%
             </span></br>
-          <label id="YearsL">No. of Years</label> 
+          No. of Years 
           <Select id="years">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -25,20 +26,13 @@
             <option value="9">9</option>
             <option value="10">10</option> 
           </select><br/><br/>
-                       
           <button onclick="compute()">Compute Interest</button>
           <br/>
-          <span id="result">
-
-          </span>
-          
+          <span id="result"></span>
+        </div>
           <br/><br/>
-
           <footer>
-
             &#169; This Calculator belongs to Jerod Durham
-    
-    
           </footer>
         </div>
     </body>
